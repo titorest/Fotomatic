@@ -70,7 +70,7 @@ h1 {
 
 .banner {
     height: 43.5rem;
-    background-image: url('../images/banner-landingpage.jpg');
+    background-image: url('banner-landingpage.jpg');
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
