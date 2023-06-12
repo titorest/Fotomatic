@@ -6,12 +6,45 @@ html {
 }
 
 body {
-    margin: -20px auto;
+    margin: 0px auto;
     background-color: #f3f3f3;
+}
+
+@media only screen and (max-width: 760px) {
+    .main-content {
+        top: 3.5rem;
+    }
+
+    header .menu {
+        display: none;
+    }
+
+    header .mobile {
+        display: block;
+        width: 100%;
+    }
+
+    header .mobile ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+
+    header .mobile .button {
+        padding: .1875rem .5rem;
+        background-color: #9dc20b;
+        line-height: 1.6;
+        color: white;
+    }
 }
 
 
 /* Header */
+
+header .mobile {
+    display: none;
+}
 
 header {
     position: fixed;
@@ -70,7 +103,7 @@ h1 {
 
 .banner {
     height: 43.5rem;
-    background-image: url('banner-landingpage.jpg');
+    background-image: url('../images/banner-landingpage.jpg');
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
@@ -227,9 +260,56 @@ button {
     }
 
 
-    /* Quote Section */
+/* Quote Section */
+
+.quotes-section {
+    display: flex;
+    justify-content: center;
+}
+
+.quote {
+    display: flex;
+    justify-content: space-around;
+}
+
+    .quote p {
+        font-family: 'Palatino';
+        font-size: 1.875rem;
+        font-style: italic;
+        padding: 5rem;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+.quote-image {
+    overflow: hidden;
+    display: flex;
+}
+
+    .quote img {
+        max-width: 100%;
+        height: auto;
+        align-self: center;
+    }
 
 
 
+/* Footer Section */
 
-    /* Footer Section */
+footer {    
+    width: 100%;
+    padding-top: 7rem;
+}
+
+.footer-section {
+    display: flex;
+    justify-content: space-between;
+    background-color: #9b9b9b;
+    line-height: 1.1;
+}
+
+    .footer-section p {
+        color: white;
+        font-size: 0.75rem;
+        padding: .875rem 2rem;
+    }
