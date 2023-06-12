@@ -10,6 +10,7 @@ body {
     background-color: #f3f3f3;
 }
 
+
 @media only screen and (max-width: 760px) {
     .main-content {
         top: 3.5rem;
@@ -100,6 +101,12 @@ h1 {
 
 
 /* Signup */
+
+@media only screen and (max-width: 760px) {
+    .content-center {
+        background-color: transparent;
+    }
+}
 
 .banner {
     height: 43.5rem;
