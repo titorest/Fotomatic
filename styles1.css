@@ -10,37 +10,6 @@ body {
     background-color: #f3f3f3;
 }
 
-
-@media only screen and (max-width: 760px) {
-    .main-content {
-        top: 3.5rem;
-    }
-
-    header .menu {
-        display: none;
-    }
-
-    header .mobile {
-        display: block;
-        width: 100%;
-    }
-
-    header .mobile ul {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 100%;
-    }
-
-    header .mobile .button {
-        padding: .1875rem .5rem;
-        background-color: #9dc20b;
-        line-height: 1.6;
-        color: white;
-    }
-}
-
-
 /* Header */
 
 header .mobile {
@@ -91,6 +60,32 @@ h1 {
         color: #4a4a4a;
     }
 
+@media only screen and (max-width: 760px) {
+
+    .menu {
+        display: none !important;
+    }
+
+    .mobile {
+        display: block !important;
+        width: 100%;
+    }
+
+        .mobile ul {
+            display: flex !important;
+            justify-content: space-around !important;
+            align-items: center;
+            width: 100%;
+            list-style: none;
+        }
+
+        .mobile .button {
+            padding: .1875rem .5rem;
+            background-color: #9dc20b;
+            line-height: 1.6;
+            color: white;
+        }
+}
 
 /* Main Content */
 
@@ -99,18 +94,22 @@ h1 {
     top: 7rem;
 }
 
+@media only screen and (max-width: 760px) {
+
+    .main-content {
+        top: 3.5rem !important;
+    }
+}
 
 /* Signup */
 
-@media only screen and (max-width: 760px) {
-    .content-center {
-        background-color: transparent;
-    }
+.sign-up-mobile {
+    display: none;
 }
 
 .banner {
     height: 43.5rem;
-    background-image: url(banner-landingpage.jpg);
+    background-image: url('../images/banner-landingpage.jpg');
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
@@ -148,7 +147,7 @@ h1 {
         color: white;
         text-transform: uppercase;
         font-family: 'Rubik';
-        line-height: 1.4; 
+        line-height: 1.4;
         margin-top: .3rem;
         margin-bottom: 0;
     }
@@ -173,6 +172,36 @@ button {
     margin-top: 2rem;
 }
 
+@media only screen and (max-width: 760px) {
+    .content-center {
+        display: none;
+    }
+
+    .sign-up-mobile {
+        display: block !important;
+        margin: 0 auto;
+        padding-top: 5rem; /* 6/12, 23:08hs add from here */
+    }
+
+        .sign-up-mobile h2 {
+            font-size: 2.25rem;
+            color: white;
+            font-family: 'Damion', cursive;
+            font-weight: normal;
+            margin-top: 1.5rem;
+            margin-bottom: 0;
+        }
+
+        .sign-up-mobile h1 {
+            font-size: 3.125rem;
+            color: white;
+            text-transform: uppercase;
+            font-family: 'Rubik';
+            line-height: 1.4;
+            margin-top: .3rem;
+            margin-bottom: 0;
+        }
+}
 
 /* Features Section */
 
@@ -201,20 +230,18 @@ button {
         max-width: 100%;
         max-height: auto;
         display: block;
-
-    }    
+    }
 
 .feature-text {
     padding: 1rem 0 0 0;
     text-align: center;
 }
 
-    .feature-text h2 {        
+    .feature-text h2 {
         font-size: 2.25rem;
         font-weight: 800;
         color: #4a4a4a;
         margin-bottom: -.5rem;
-
     }
 
     .feature-text p {
@@ -222,7 +249,6 @@ button {
         font-size: 1rem;
         line-height: 1.2;
     }
-
 
 /* Filters Section */
 
@@ -240,6 +266,7 @@ button {
     padding: 1rem 0 0 0;
     margin: 0 auto;
 }
+
     .filters h2 {
         color: white;
         font-size: 2.25rem;
@@ -265,7 +292,6 @@ button {
         height: auto;
         width: 25%;
     }
-
 
 /* Quote Section */
 
@@ -293,17 +319,15 @@ button {
     display: flex;
 }
 
-    .quote img {
-        max-width: 100%;
-        height: auto;
-        align-self: center;
-    }
-
-
+.quote img {
+    max-width: 100%;
+    height: auto;
+    align-self: center;
+}
 
 /* Footer Section */
 
-footer {    
+footer {
     width: 100%;
     padding-top: 7rem;
 }
