@@ -61,7 +61,9 @@ h1 {
     }
 
 @media only screen and (max-width: 760px) {
-
+    header h1 {
+        display: none;
+    }
     .menu {
         display: none !important;
     }
@@ -77,6 +79,7 @@ h1 {
             align-items: center;
             width: 100%;
             list-style: none;
+            padding: 0;
         }
 
         .mobile .button {
@@ -294,7 +297,7 @@ button {
     justify-content: space-between;
     max-width: 100%;
     overflow: hidden;
-    padding: 4rem 1%;
+    padding: 4rem 1% 1rem;
 }
 
 .filters {
@@ -308,15 +311,14 @@ button {
         color: white;
         font-size: 2.25rem;
         margin-bottom: 0;
-        margin-top: 0;
+        margin-bottom: 2rem;
         opacity: 100%;
     }
 
     .filters p {
         color: white;
         font-size: 1rem;
-        line-height: 1.2;
-        margin-top: 0;
+        line-height: 1.2;        
         margin-bottom: 4rem;
     }
 
@@ -332,34 +334,16 @@ button {
     }
 
 @media only screen and (max-width: 760px) {
-    .filters-section {
-        display: flex;
-        justify-content: space-between;
-        max-width: 100%;
-        overflow: hidden;
-        padding: 4rem 1%;
+    .filters h2 {
+        font-size: 1.125rem;
     }
 
-    .filters {
-        background-color: #4a4a4a;
-        text-align: center;
-        padding: 1rem 0 0 0;
-        margin: 0 auto;
+    .filters p {
+        font-size: .9rem;
+        line-height: 1.2;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
     }
-
-        .filters h2 {
-            color: white;
-            font-size: 1.125rem;
-            padding-top: 1rem;
-        }
-
-        .filters p {
-            color: white;
-            font-size: .9rem;
-            line-height: 1.2;
-            margin-top: 1rem;
-            margin-bottom: 2rem;
-        }
 
     #filter-4 {
         display: none;
@@ -393,7 +377,7 @@ button {
         font-family: 'Palatino';
         font-size: 1.875rem;
         font-style: italic;
-        padding: 5rem;
+        padding: 2rem;
         margin: 0 auto;
         text-align: center;
     }
@@ -410,6 +394,9 @@ button {
 }
 
 @media only screen and (max-width: 760px) {
+    .quotes-section {
+    }
+
     .quote {
         display: block;
     }
